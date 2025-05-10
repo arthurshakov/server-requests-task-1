@@ -23,7 +23,7 @@ export const AppContainer = () => {
   useEffect(() => {
     setIsLoading(true);
 
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://jsonplaceholder.typicode.com/todos')
       .then((loadedData) => loadedData.json())
       .then((list) => {
           setTodoList(list);

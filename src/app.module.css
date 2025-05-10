@@ -1,0 +1,49 @@
+.app {
+  position: relative;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.spinner {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgb(247, 212, 124);
+  border-left-color: rgba(247, 212, 124, 0.3);
+  animation: spinner 2s linear infinite;
+}
+
+.todo-list {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  min-height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
